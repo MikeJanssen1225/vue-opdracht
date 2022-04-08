@@ -26,15 +26,17 @@ export default defineHandle(async (req, res) => {
     validWords[Math.floor(Math.random() * validWords.length)]
 
   await storage.setItem(day, word)
-
+  console.log(word);
+  console.log(day);
   const state: GameState = decode(useCookie(req, 'state'))
   state.push([guess, generateHint(word, guess)])
   setCookie(res, 'state', encode(state), {
     path: '/',
     maxAge: 60 * 60 * 24,
   })
-
-  return state
+  console.log(state);
+  
+  return state;
 })
 
 function generateHint(word: string, guess: string): string {

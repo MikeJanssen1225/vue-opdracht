@@ -10,14 +10,14 @@
       <nav>
         <ul>
           <li>
-            <NuxtLink to="/" class="flex items-center gap-2 text-green-400">
+            <NuxtLink to="/">
               <img
-                alt="Nuxt logo"
-                src="https://nuxtjs.org/design-kit/colored-logo.svg"
-                height="24"
-                width="24"
+                alt="MM logo"
+                src="logo_worlde.png"
+                height="400"
+                width="400"
               />
-              <strong>n3rdle</strong>
+              <strong></strong>
             </NuxtLink>
           </li>
         </ul>
@@ -28,8 +28,7 @@
     </main>
     <footer>
       <small>
-        Made with ❤️ &middot;
-        <a href="https://github.com/danielroe/n3rdle">Contributions welcome</a>
+        
       </small>
     </footer>
   </div>
