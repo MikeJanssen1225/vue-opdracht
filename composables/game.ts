@@ -18,8 +18,12 @@ export const useGameState = () => {
   }
 
   function resetGame() {
-    state.value = []
-    router.push('/')
+    // state.value = []
+    let date = new Date();
+    date.setTime(date.getTime() + (days*24*60*60*1000));
+    let expires = "; expires=" + date.toUTCString();
+    document.cookie = "state=[]" +expires+ "; path=/";
+    router.push('/');
   }
 
   return { state, submitGuess, resetGame }
