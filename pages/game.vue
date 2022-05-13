@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { state, submitGuess, resetGame } = useGameState()
+// hoe kan deze pagina usegamestate vinden.
 </script>
 
 <template>
